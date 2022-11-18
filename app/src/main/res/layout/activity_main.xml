@@ -1,18 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@color/white"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txt_expressao3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="45+45"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_expressao2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="45+45"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/txt_expressao1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="45+45"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/txt_calc"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="45+45"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="= 90"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        >
+    </TextView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+
+        <Button
+            android:id="@+id/bt_C"
+            style="@style/Operator_Button"
+            android:text="C"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/bt_apagar"
+            style="@style/Operator_Button"
+            android:text="DEL"
+            >
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
