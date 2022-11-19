@@ -10,17 +10,17 @@
         <item name="android:layout_margin">0.1dp</item>
     </style>
     <style name="Operator_Button" parent="Contaneir_Button">
-        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:background">@drawable/shape_number_default</item>
         <item name="android:textColor">@color/orange</item>
     </style>
     
     <style name="Operator_Button_Equals" parent="Contaneir_Button">
         <item name="android:textColor">@color/white</item>
-        <item name="android:backgroundTint">@color/orange</item>
+        <item name="android:background">@drawable/shape_equals_selecionado</item>
     </style>
     
     <style name="Numbers_Button" parent="Contaneir_Button">
-        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:background">@drawable/shape_number_default</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
